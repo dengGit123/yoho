@@ -183,9 +183,6 @@
 	margin-top: 26px;
 	padding: 1em;
 }
-/*.content form input[type='password']{
-	margin-bottom: 24px;
-}*/
 .content form p{
 	width: 100%;
 	margin: 24px 0 10px 0;
@@ -196,16 +193,34 @@
 }
 .content form p a{
 	color: #ff1901;
+	float: right;
+	font-size: 12px;
 }
 .content form .img_list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-between;	
 }
 .content form .img_list div{
 	width: 62px;
 	height: 62px;
 	border:1px solid #e0e0e0;
 	box-sizing: border-box;
+	overflow: hidden;
+}
+.content form .img_list div img{
+	width: 240px;
+}
+.content form .img_list div:nth-child(1){
+	
+}
+.content form .img_list div:nth-child(2) img{
+	margin-left: -60px;
+}
+.content form .img_list div:nth-child(3) img{
+	margin-left: -120px;
+}
+.content form .img_list div:nth-child(4) img{
+	margin-left: -180px;
 }
 .content form button{
 	width: 100%;
@@ -241,12 +256,17 @@
 }
 .content form .help a{
 	color: #c8c8c8;
-	padding: 6px;
+	padding: 0 6px;
 }
 .content form .help a:nth-child(2){
 	color: #ff1901;
 	padding-right: 0;
 	border-left: 1px solid #c8b9c8;
+}
+.content form .network{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 24px;
 }
 /*底部*/
 #footer_wrapper {
