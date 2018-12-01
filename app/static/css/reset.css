@@ -32,15 +32,15 @@ body {
 
 a {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 li {
     list-style: none;
 }
 
-input {
-    outline: 0;
+input ,select{
+    outline: none;
 }
 
 h1,
