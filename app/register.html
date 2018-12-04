@@ -15,7 +15,7 @@
             </div>
             <ul>
                 <li>
-                    HI~<a href="">[请登录]</a>&nbsp;<a href="">[免费注册]</a>
+                    HI~<a href="login.html">[请登录]</a>&nbsp;<a href="register.html">[免费注册]</a>
                 </li>
                 <li>
                     <a href="">MY有货<span></span></a>
@@ -43,7 +43,7 @@
     			<img src="static/images/banner_img.jpg" alt="" />
     		</div>
     		<div class="register">
-    			<form action="">
+    			<form action="" onsubmit="return false">
     				<select name="">
     					<option value="" selected="selected">中国</option>
     					<option value="">中国香港</option>
@@ -59,7 +59,10 @@
     				</select>
     				<div class="tel">
     					<span>+86</span>
-    					<input type="text" placeholder="请输入手机号码"/>
+    					<input type="text" placeholder="请输入手机号码" name="phone" data-error="请输入手机号"/>
+    					<div class="error_title">
+    						手机号码格式不正确,请重新输入
+    					</div>
     				</div>
     				<p><span>请将下列图片翻转至正确方向</span><a href="" class="change">换一批</a></p>
 	    			<div class="img_list">
@@ -69,18 +72,18 @@
 	    				<div><img src="static/images/images.png" alt="" /></div>
 	    			</div>
 	    			<div class="verify">
-	    				<input type="text" placeholder="短信验证码"/>
+	    				<input type="text" placeholder="短信验证码" name="verify"/>
 	    				<button>获取短信验证码</button>
 	    			</div>
 	    			<div class="set_pass clearfix">
-	    				<input type="text" placeholder="设置密码"/>
+	    				<input type="text" placeholder="设置密码" name="password"/>
 	    				<div class="status clearfix">
 	    					<span>低</span>
 	    					<span>中</span>
 	    					<span>高</span>
 	    				</div>
 	    			</div>
-	    			<input type="text" placeholder="潮流口令(非必填)" name="command"/>
+	    			<input type="text" placeholder="潮流口令(非必填)" name="command" maxlength="20"/>
 	    			<p class="check"><input type="checkbox" checked="checked" name=""/><span>我已阅读并同意遵守</span><a href="">YOHO!BUY有货服务条款</a></p>
 	    			<div class="right_away">
 	    				<button>立即注册</button>
@@ -189,5 +192,6 @@
             <p>CopyRight&copy;2007-2018南京新与力文化传播有限公司苏ICP备09011225号NewPowerCo.版权所有经营许可证编号:苏B2-20120395</p>
         </div>
     </div>
+    <script src="static/js/register.js"></script>
 	</body>
 </html>

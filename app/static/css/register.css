@@ -116,6 +116,35 @@
 }
 .content .register .tel{
 	display: flex;
+	position: relative;
+}
+.content .register .tel .error_title{
+	position: absolute;
+    z-index: 1000;
+    padding: 0 10px;
+    height: 30px;
+    border: 1px solid #ffbdbe;
+    background-color: #ffebeb;
+    color: red;
+    line-height: 30px;
+	left: 58px;
+    top: -40px;
+}
+.content .register .tel .error_title:after{
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-right: 1px solid #ffbdbe;
+	border-bottom: 1px solid #ffbdbe;
+	background: #ffebeb;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 24px;
+	left: 24px;
+}
+.content .register .error{
+	border: 1px solid red;
 }
 .content .register .tel span{
 	display: block;
