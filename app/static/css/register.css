@@ -129,6 +129,7 @@
     line-height: 30px;
 	left: 58px;
     top: -40px;
+    display: none;
 }
 .content .register .tel .error_title:after{
 	content: "";
@@ -143,7 +144,7 @@
 	top: 24px;
 	left: 24px;
 }
-.content .register .error{
+.content .register .tel  input.error{
 	border: 1px solid red;
 }
 .content .register .tel span{

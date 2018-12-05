@@ -14,7 +14,8 @@ const checkInput = {
 }
 const register = (function(){
 	let form_box = document.querySelector("form");
-	let inputAll = form_box.querySelector("input");
+	let inputAll = form_box.querySelector("input"),
+	error_title = document.querySelector(".content .register .error_title");
 	return {
 		init(){
 			this.event();
@@ -25,9 +26,29 @@ const register = (function(){
 				let val = this.value;
 				console.log(val);
 				if(checkInput[this.name](val)){
-					console.log(111);
+					error_title.style.display = "none";
+					this.className = this.className.replace("error","");
+				}else if(val==""){
+					error_title.style.display = "block";
+					error_title.innerHTML = this.getAttribute("data-error")
+					if((this.className.indexOf("error"))==-1){
+						this.className += "error" ;
+					}
 				}else{
-					console.log(111111111111111111111111);
+					error_title.style.display = "block";
+					error_title.innerHTML = "手机号码格式不正确,请重新输入";
+					if((this.className.indexOf("error"))==-1){
+						this.className += "error" ;
+					}
+				}
+			}
+			form_box["phone"].onblur = function(){
+				let val = this.value;
+				if(val !=""&& (this.className.indexOf("error"))!=-1){
+					error_title.style.display = "block";
+				}else{
+					error_title.style.display = "none";
+					this.className = "";
 				}
 			}
 		}
