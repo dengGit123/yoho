@@ -118,7 +118,8 @@
 	display: flex;
 	position: relative;
 }
-.content .register .tel .error_title{
+.content .register .tel .error_title,
+.content .register .set_pass .error_title{
 	position: absolute;
     z-index: 1000;
     padding: 0 10px;
@@ -131,7 +132,13 @@
     top: -40px;
     display: none;
 }
-.content .register .tel .error_title:after{
+.content .register .set_pass .error_title{
+	top: -16px;
+	left: 0;
+	font-size: 14px;
+}
+.content .register .tel .error_title:after,
+.content .register .set_pass .error_title:after{
 	content: "";
 	display: block;
 	width: 10px;
@@ -144,7 +151,8 @@
 	top: 24px;
 	left: 24px;
 }
-.content .register .tel  input.error{
+.content .register .tel  input.error,
+.content .register .set_pass input.error{
 	border: 1px solid red;
 }
 .content .register .tel span{
@@ -190,6 +198,7 @@
 }
 .content .register .img_list div img{
 	width: 240px;
+	margin-top: 0;
 }
 .content .register .img_list div:nth-child(1) img{
 	
@@ -206,6 +215,7 @@
 .content .register .verify{
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 }
 .content .register .verify input{
 	width: 160px;
@@ -223,6 +233,24 @@
 	font-size: 12px;
 	border: 0;
 }
+.content .register .verify p{
+	position: absolute;
+	left: 282px;
+	top: 50%;
+	transform: translateY(-50%);
+	white-space: nowrap;
+	font-size: 14px;
+	display: none;
+}
+.content .register .verify p i{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: blue;
+	vertical-align: middle;
+	margin-right: 2px;
+}
 .content .register .set_pass input,
 .content .register input[name=command]{
 	width: 100%;
@@ -232,6 +260,33 @@
 	text-indent: 1em;
 	font-size: 16px;
 	margin: 25px 0 9px; 
+}
+.content .register .set_pass {
+	position: relative;
+}
+.content .register .set_pass .hint{
+	position: absolute;
+    top: 5px;
+    left: 285px;
+    padding-top: 7px;
+    width: 160px!important;
+    height: 72px;
+    border: 1px solid #000;
+    display: none;
+}
+.content .register .set_pass .hint p{
+	height: 22px;
+    color: #b9b9b9;
+    font-size: 12px;
+    line-height: 22px;
+}
+.content .register .set_pass .hint p i{
+	width: 14px;
+    height: 14px;
+    color: blue;
+    vertical-align: middle;
+    margin-right: 7px;
+    margin-left: 4px;
 }
 .content .register .set_pass .status{
 	float: right;
@@ -245,6 +300,18 @@
 	float: left;
 	text-align: center;
 	line-height: 15px;
+}
+.content .register .status span.red{
+	background: red;
+	color: #fff;
+}
+.content .register .status span.yellow{
+	background: yellow;
+	color: #fff;
+}
+.content .register .status span.green{
+	background: green;
+	color: #fff;
 }
 .content .register .status span:nth-child(2){
 	margin: 0 4px;

@@ -1,0 +1,153 @@
+.center{
+	width: 1150px;
+	margin: 0 auto;
+}
+.public{
+	padding-bottom: 80px;
+}
+.public .top_title,
+.new .top_title{
+	position: relative;
+	margin-bottom: 40px;
+}
+.public .wrapper{
+	display: flex;
+	height: 811px;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.public .top_title h2,
+.new .top_title h2{
+	margin: 0 auto;
+	width:298px;
+	line-height: 31px;
+	border: 1px solid #000000;
+	font-size: 14px;
+	text-align: center;
+}
+.public .top_title a,
+.new .top_title a{
+	position: absolute;
+	top: 50%;
+	right: 16px;
+	transform: translateY(-50%);
+	font-size: 12px;
+	color: #000;
+}
+.public .wrapper ul{
+	/*float: left;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.public .img_list1 ul li a,
+.public .img_list2 ul li a{
+	display: block;
+	width: 185px;
+	height: 248px;
+	overflow: hidden;
+}
+.public .wrapper img{
+	display: block;
+}
+.public .img_list1 ul li:first-child{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 248px;
+
+}
+.public .img_list1 ul li:first-child div:first-child a{
+	height: 152px;
+}
+.public .img_list1 ul li:first-child div:last-child a{
+	height: 86px;
+}
+.public .img_list1 ul li:nth-child(2) a,
+.public .img_list2 ul li:nth-child(2) a{
+	width: 378px;
+}
+.public .img_list2 ul li:first-child{
+	display: flex;
+	flex-wrap: wrap;
+	width: 185px;
+	height: 248px;
+	background-color: #f8f8f8;
+}
+.public .img_list2 ul li:first-child a{
+	display:block;
+	width: 50%;
+	height: 16%;
+	text-align: center;
+	color: #000000;
+	line-height: 100%;
+	line-height: 39px;
+}
+.public .img_list3 li a{
+	display: block;
+	width:222px;
+	height: 298px;
+}
+.new ul{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.new ul li {
+	text-align: center;
+}
+.new ul li div{
+	margin-bottom: 12px;
+}
+.new ul li div a{
+	display: block;
+	width: 222px;
+	height: 298px;
+}
+.new ul li div a img{
+	display: block;
+	width: 222px;
+	border: 0;
+}
+.new ul li{
+	margin-bottom: 49px;
+}
+.new ul li a{
+	width: 222px;
+    margin-top: 16px;
+    line-height: 1.5;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #000;
+    font-size: 14px;
+}
+.new ul li p{
+	margin-top: 5px;
+    line-height: 22px;
+}
+div.more h2 a{
+	display: block;
+	width: 120px;
+	height: 35px;
+	line-height: 35px;
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: center;
+	margin: 0 auto 40px;
+}
+.hover li img{
+	position: relative;
+}
+.hover li img:after{
+	content: "";
+	width: 222px;
+	height: 248px;
+	background: rgba(0,255,0,0.5);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+}

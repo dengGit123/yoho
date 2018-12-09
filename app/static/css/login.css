@@ -187,6 +187,26 @@
 	margin-top: 26px;
 	padding: 1em;
 }
+.content form div.emali,
+.content form div.pass{
+	position: relative;
+}
+.content form p.emali-error,
+.content form p.password-error{
+	position: absolute;
+	bottom: 16px;
+    position: absolute;
+    left: 287px;
+    white-space: nowrap;
+    color: red;
+    display: none;
+}
+.content form p.emali-error span,
+.content form p.password-error span{
+	vertical-align: middle;
+	margin-right: 6px;
+	color: red;
+}
 .content form>p{
 	width: 100%;
 	margin: 24px 0 10px 0;

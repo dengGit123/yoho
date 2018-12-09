@@ -43,7 +43,7 @@
     			<img src="static/images/banner_img.jpg" alt="" />
     		</div>
     		<div class="register">
-    			<form action="" onsubmit="return false">
+    			<form action="../server/register.php" onsubmit="return false" method="post">
     				<select name="">
     					<option value="" selected="selected">中国</option>
     					<option value="">中国香港</option>
@@ -74,19 +74,27 @@
 	    			<div class="verify">
 	    				<input type="text" placeholder="短信验证码" name="verify"/>
 	    				<button>获取短信验证码</button>
+	    				<p><i></i>短信验证码已发送至您的手机，请查收</p>
 	    			</div>
 	    			<div class="set_pass clearfix">
-	    				<input type="text" placeholder="设置密码" name="password"/>
-	    				<div class="status clearfix">
+	    				<input type="password" placeholder="设置密码" name="password" data-error="请输入密码" maxlength="20"/>
+	    				<div class="error_title">
+    						密码只支持6-20位字符
+    					</div>
+	    				<div class="status clearfix" style="color: #FFF;">
 	    					<span>低</span>
 	    					<span>中</span>
 	    					<span>高</span>
+	    				</div>
+	    				<div class="hint">
+	    					<p><i class="iconfont icon-xinxijinggao"></i>密码只支持6-20位字符</p>
+	    					<p><i class="iconfont icon-xinxijinggao"></i>由字母、 数字组合，不能包含特殊符号</p>
 	    				</div>
 	    			</div>
 	    			<input type="text" placeholder="潮流口令(非必填)" name="command" maxlength="20"/>
 	    			<p class="check"><input type="checkbox" checked="checked" name=""/><span>我已阅读并同意遵守</span><a href="">YOHO!BUY有货服务条款</a></p>
 	    			<div class="right_away">
-	    				<button>立即注册</button>
+	    				<button class="sub">立即注册</button>
 	    				<div class="code">
 	    					<div class="sao_code">
 	    						<img src="static/images/code_img.png"/>
@@ -192,6 +200,7 @@
             <p>CopyRight&copy;2007-2018南京新与力文化传播有限公司苏ICP备09011225号NewPowerCo.版权所有经营许可证编号:苏B2-20120395</p>
         </div>
     </div>
+   	<script src="static/js/ajax2.0.js"></script>
     <script src="static/js/register.js"></script>
 	</body>
 </html>
