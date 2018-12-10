@@ -294,7 +294,7 @@
 .main-nav-list li{
 	float: left;
 	display: flex;
-	padding: 8px 22px 5px;
+	padding: 16px 22px 5px;
 	text-align: center;
 	flex-direction: column;
 }
@@ -321,6 +321,11 @@
 	width: 378px;
 	float: right;
 	margin-top: 40px;
+	position: relative;
+}
+.search-2018{
+	width: 320px;
+	margin: 0;
 }
 #search-form{
 	position: relative;
@@ -346,8 +351,10 @@
 .search-hot{
 	width: 320px;
 	height: 16px;
+	margin-right: 0;
 	overflow: hidden;
 	display: flex;
+	box-sizing: border-box;
 	flex-direction: row;
 }
 .search-hot li{
@@ -361,7 +368,62 @@
 	float: right;
 	cursor: pointer;
 	background: url(../images/shop-car.jpg) no-repeat;
+	position: absolute;
+	top: 0;
+	left: 360px;
+}
+.nav-wrapper{
+	width: 100%;
+	height: 40px;
+	background: #000;
+	padding-top: 2px;
+}
 
+.sub-nav-list li{
+	line-height: 40px;
+	padding-right: 46px;
+	margin-right: 36px;
+	display: inline-block;
+}
+.sub-nav-list li a{
+	color: #fff;
+	font-size: 14px;
+	line-height: 14px;
+	position: relative;
+}
+.sub-nav-list li:hover a{
+	padding-bottom: 3px;
+	border-bottom: 2px solid #fff;
+}
+/* 右侧固定二维码 */
+#code-down-box{
+	position: fixed;
+	width: 117px;
+	top: 260px;
+	right: 20px;
+	z-index: 999;
+	display: block;
+}
+.code-img{
+	width: 113px;
+	height: 113px;
+	background: url(../images/code_img.png) no-repeat;
+	background-size:cover; 
+}
+#code-down-box h1{
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	color: #000;
+	text-align: center;
+}
+
+
+
+
+
+
+/* 下半部分 */
 .center{
 	width: 1150px;
 	margin: 0 auto;
@@ -379,8 +441,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 }
-.public .top_title h2,
-.new .top_title h2{
+.public .top_title h2,.new .top_title h2{
 	margin: 0 auto;
 	width:298px;
 	line-height: 31px;
