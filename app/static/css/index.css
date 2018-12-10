@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 .center {
     width: 1150px;
     margin: 0 auto;
-=======
+｝
 .content {
     width: 1150px;
     margin: 0 auto;
@@ -426,23 +426,20 @@
 .center{
 	width: 1150px;
 	margin: 0 auto;
->>>>>>> 68965814a3bbddf3543201c86d3957789f0ceb65
 }
 
 .public {
     padding-bottom: 80px;
 }
-<<<<<<< HEAD
 
 .public .top_title,
 .new .top_title {
     position: relative;
     margin-bottom: 40px;
-=======
+｝
 .public .top_title,.new .top_title{
 	position: relative;
 	margin-bottom: 40px;
->>>>>>> 68965814a3bbddf3543201c86d3957789f0ceb65
 }
 
 .public .wrapper {
@@ -451,7 +448,6 @@
     flex-direction: column;
     justify-content: space-between;
 }
-<<<<<<< HEAD
 
 .public .top_title h2,
 .new .top_title h2 {
@@ -461,7 +457,7 @@
     border: 1px solid #000000;
     font-size: 14px;
     text-align: center;
-=======
+｝
 .public .top_title h2,.new .top_title h2{
 	margin: 0 auto;
 	width:298px;
@@ -469,7 +465,6 @@
 	border: 1px solid #000000;
 	font-size: 14px;
 	text-align: center;
->>>>>>> 68965814a3bbddf3543201c86d3957789f0ceb65
 }
 
 .public .top_title a,
@@ -737,7 +732,6 @@ div.more h2 a {
 .footer .footer_bottom .a_list {
     margin-left: 4px;
 }
-<<<<<<< HEAD
 
 .footer .footer_bottom .a_list a {
     font-size: 12px;
@@ -757,7 +751,6 @@ div.more h2 a {
     text-align: center;
     margin-top: 15px;
 }
-=======
 .hover li img{
 	position: relative;
 }
@@ -773,5 +766,3 @@ div.more h2 a {
 
 }
 
-
->>>>>>> 68965814a3bbddf3543201c86d3957789f0ceb65

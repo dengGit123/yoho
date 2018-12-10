@@ -14,8 +14,6 @@ var miniimg = require('gulp-imagemin'); //图片压缩
 var sass = require('gulp-sass');
 sass.compiler = require('node-sass');
 var runSequence = require('run-sequence'); //解决异步问题
-
-// 
 gulp.task("watch", function() {
     gulp.watch("app/**/*.html", ["minihtml"])
     gulp.watch("app/**/*.js", ["minijs"])
@@ -26,6 +24,7 @@ gulp.task('minijs', function() {
         gulp.src('app/static/js/*.js')
             .pipe(gulp.dest('dist/static/js'))
             .pipe(connect.reload())
+             console.log("minijs执行了")
     })
     //压缩css
 gulp.task('minicss', function() {
@@ -33,12 +32,14 @@ gulp.task('minicss', function() {
             .pipe(minicss())
             .pipe(gulp.dest('dist/static/css'))
             .pipe(connect.reload())
+            console.log("minicss执行了")
     })
     //压缩HTML
 gulp.task('minihtml', function() {
         gulp.src('app/*.html')
             .pipe(gulp.dest('dist'))
             .pipe(connect.reload()) //实时刷新
+            console.log("minihtml执行了")
     })
     //图片压缩
 gulp.task('miniimg', function() {

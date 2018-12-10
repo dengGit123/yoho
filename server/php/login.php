@@ -1,4 +1,5 @@
 <?php
+    header('Access-Control-Allow-Origin:*');
 	$requestData = file_get_contents("php://input");
     $requestData = json_decode($requestData);
     $phone = $requestData -> phone;
