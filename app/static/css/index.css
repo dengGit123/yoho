@@ -138,16 +138,9 @@ div.more h2 a{
 	text-align: center;
 	margin: 0 auto 40px;
 }
-.hover li img{
+.hover li{
 	position: relative;
 }
-.hover li img:after{
-	content: "";
-	width: 222px;
-	height: 248px;
-	background: rgba(0,255,0,0.5);
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 9999;
+.hover li img:hover{
+	opacity: 0.5;
 }
