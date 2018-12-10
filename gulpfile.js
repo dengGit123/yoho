@@ -65,7 +65,7 @@ gulp.task('server', function() {
 })
 gulp.task("all", function() {
         gulp.src("app/**/*.*")
-            .pipe(gulp.dest("app/dist"))
+            .pipe(gulp.dest("dist"))
             .pipe(connect.reload())
     })
     //将ES6代码编译成ES5
@@ -78,7 +78,7 @@ gulp.task("es5", function() {
     })
     //删除文件
 gulp.task('clean', function() {
-        del(['app/dist'])
+        del(['dist'])
     })
     //
 gulp.task("default", function() {
