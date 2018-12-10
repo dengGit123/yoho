@@ -82,7 +82,6 @@ gulp.task("es5", function() {
 gulp.task('clean', function() {
         del(['dist'])
     })
-    //
 gulp.task("default", function() {
     runSequence(["clean"], ["all"], ["watch", "server"])
 });
