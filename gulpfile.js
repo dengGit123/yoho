@@ -1,19 +1,4 @@
-<<<<<<< HEAD
-var gulp = require('gulp');
-gulp.task('default', function() {
-    // 将你的默认的任务代码放在这
-    console.log('shabi');
-  });
-gulp.task('first',function(){
-  console.log('first');
-});
-gulp.task('second', function(){
-  console.log('second');
-});
-gulp.task('third',function(){
-  console.log('thired');
-})
-=======
+
 var gulp = require("gulp");
 var uglify = require('gulp-uglify');
 var babel = require('gulp-babel');
@@ -28,15 +13,21 @@ gulp.task("es5",function(){
 }))
 .pipe(gulp.dest("./dist"));
 });
-//开启服务器
-gulp.task("connect",function(){
+//开启服务器,自动刷新
+var gulp = require('gulp');
+var connect = require('gulp-connect');  //静态服务器
+
+//使用connect启动一个web服务器
+gulp.task('woyaofuwuqi', function () {  //任务名称不要有空格
 	connect.server({
-		root:"dist",
-		port:7777,
-		livereload:true
+		liverload: true,
+		port:9000  //端口号
 	});
 });
-gulp.task("water",function(){
-	
+
+//默认任务
+gulp.task('default', function() {
+	// 测试一下
+	console.log('this is a new test page.');
+	gulp.start('woyaofuwuqi');  //启动一个web服务器
 });
->>>>>>> 545df455732661dc9536d3c4dfca93daef7a9888
