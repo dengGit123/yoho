@@ -19,6 +19,7 @@ var runSequence = require('run-sequence'); //解决异步问题
 gulp.task("watch", function() {
     gulp.watch("app/**/*.html", ["minihtml"])
     gulp.watch("app/**/*.js", ["minijs"])
+    gulp.watch("app/**/*.css", ["minicss"])
 });
 //压缩js
 gulp.task('minijs', function() {
@@ -48,12 +49,12 @@ gulp.task('miniimg', function() {
 
 
 //监听实时更新
-gulp.task('watch', function() {
-    gulp.watch('app/static/js/index.js', ['minijs'])
-    gulp.watch('app/static/css/index.css', ['minicss'])
-    gulp.watch('app/static/images/bg71.png', ['miniimg'])
-    gulp.watch('app/index.html', ['minihtml'])
-})
+// gulp.task('watch', function() {
+//     gulp.watch('app/static/js/*.js', ['minijs'])
+//     gulp.watch('app/static/css/*.css', ['minicss'])
+//     gulp.watch('app/static/images/bg71.png', ['miniimg'])
+//     gulp.watch('app/index.html', ['minihtml'])
+// })
 
 //打开服务器
 gulp.task('server', function() {

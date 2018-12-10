@@ -48,4 +48,9 @@
     top: 0;
     left: 515px;
     z-index: 100;
+    display: none;
+}
+
+.fdj .show_img img {
+    position: absolute;
 }
