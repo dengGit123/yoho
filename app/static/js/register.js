@@ -174,6 +174,7 @@ const register = (function() {
                             password: form_box["password"].value
                         }
                     }).then(data => {
+                        location.assign("index.html");
                         console.log(data);
                     })
                 }
