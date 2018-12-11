@@ -167,7 +167,7 @@ const register = (function() {
                     val_password = form_box["password"].value;
                 //				console.log(class_phone,class_password);
                 if ((val_phone != "") && (val_password != "") && (class_phone != "error") && (class_password != "error")) {
-                    sendAjax("http://10.36.141.35:7777/wamp64/www/item/yoho/server/php/register.php", {
+                    sendAjax("http://localhost:8888/item/yoho/server/php/register.php", {
                         method: 'post',
                         data: {
                             phone: form_box["phone"].value,
