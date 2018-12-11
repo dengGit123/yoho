@@ -48,7 +48,7 @@ const login = (function(){
 			}
 			btn.onclick = function(){
 				if(form_box["tel_email"].value != "" && form_box["password"].value !=""){
-					sendAjax("http://10.36.141.35:7777/server/php/login.php",{
+					sendAjax("http://localhost:8888/item/yoho/server/php/login.php",{
 						method: 'post',
         				data: {
         					phone:form_box["tel_email"].value,
