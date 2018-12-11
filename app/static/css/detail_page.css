@@ -2,7 +2,9 @@
     width: 1150px;
     margin: 0 auto;
 }
-
+.fdj{
+	float: left;
+}
 .fdj .img .min_img {
     width: 420px;
     height: 560px;
@@ -11,9 +13,8 @@
 }
 
 .fdj .img .list_img ul {
-    float: left;
-    margin-left: 10px;
-    margin-right: 60px;
+    float: right;
+    margin-right: -84px;
 }
 
 .fdj .img .list_img li {
@@ -53,3 +54,258 @@
 .fdj .show_img img {
     position: absolute;
 }
+.fdj .share{
+	margin-top: 20px;
+}
+.fdj .share span{
+	margin-right: 10px;
+}
+.fdj .share a{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+.fdj .share a:nth-of-type(1){
+	background: url("../images/sprite.png") no-repeat 0 -38px;
+}
+.fdj .share a:nth-of-type(2){
+	background: url("../images/sprite.png") no-repeat -24px -38px;
+}
+.fdj .share a:nth-of-type(3){
+	background: url("../images/sprite.png") no-repeat 0 -62px;
+}
+.fdj .share a:nth-of-type(4){
+	background: url("../images/sprite.png") no-repeat -48px -62px;
+}
+
+/*商品信息*/
+.shop_info{
+	width: 585px;
+	float: right;
+}
+.shop_info h2{
+	font-size: 20px;
+	font-weight: 700px;
+	line-height: 30px;
+}
+.shop_info .border{
+	width: 100%;
+	height: 2px;
+    border-bottom: 1px solid #eaeceb;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.shop_info span.title{
+	display: inline-block;
+	color: #000;
+    font-size: 12px;
+    letter-spacing: 5px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.shop_info span.title:after{
+	content: "";
+	display: block;
+	height: 100%;
+	overflow: hidden;
+	text-overflow: hidden;
+}
+.shop_info p span.big{
+	color: #000;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: middle;
+}
+.shop_info .promotion{
+	margin: 10px 0;
+	 /*border-bottom: 1px solid #eaeceb;*/
+}
+.shop_info .promotion>span{
+	float: left;
+}
+.shop_info .promotion ul{
+	float: left;
+}
+.shop_info .promotion ul li span{
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	background: #b0b0b0;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+}
+.shop_info .promotion ul li{
+	margin-bottom: 8px;
+}
+.shop_info .promotion ul li:last-child{
+	margin-bottom: 0;
+}
+.shop_info span.top{
+	margin-top: 8px;
+}
+.shop_info .color span{
+	float: left;
+}
+.shop_info .color div{
+	height: 32px;
+	border: 1px solid #999;
+	float: left;
+	padding-right: 5px;
+}
+.shop_info .color .yifu{
+	vertical-align: middle;
+	margin-right: 10px;
+	display:inline-block;
+	width: 24px;
+	height: 32px;
+	background: url("../images/02d174655cb12c3ed59df2626a2d79d814 (1).jpg");	
+}
+.shop_info .length span,
+.shop_info .number>span,
+.shop_info .number>div{
+	float: left;
+}
+.shop_info .length{
+	margin-bottom: 10px;
+}
+
+.shop_info .length ul{
+	float: left;
+}
+.shop_info .length ul li{
+	    float: left;
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 8px;
+    margin-top: 8px;
+    padding: 0 10px;
+    border: 1px solid #999;
+    text-align: center;
+    cursor: pointer;
+    min-width: 10px;
+}
+.shop_info .number span.title{
+	margin-top:5px;
+}
+.shop_info .number div span{
+	float: left;
+}
+.shop_info .number div span:nth-child(1),
+.shop_info .number div span:nth-child(3){
+	display: block;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	background-color: #e0e0e0;
+	border: 1px solid #b0b0b0;
+	text-align: center;
+	font-size: 24px;
+	cursor: pointer;
+}
+.shop_info .number div span:nth-child(2){
+	display: block;
+	width: 50px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+.shop_info .btn{
+	margin-bottom: 15px;
+}
+.shop_info .btn span{
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 46px;
+}
+.shop_info .btn .go_car{
+	height: 46px;
+	line-height: 46px;
+	width: 180px;
+	color: #fff;
+	background: #d0021b;
+    font-size: 16px;
+    box-sizing: border-box;
+    border:0;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.shop_info .btn .go_car i{
+	margin-right: 15px;
+	vertical-align: middle;
+}
+.shop_info .btn .collect{
+	width: 140px;
+	height: 46px;
+	background: #fff;
+    color: #222;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.shop_info .btn .collect i{
+	margin-right: 5px;
+    color: #ccc;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.shop_info .server{
+	font-size: 12px;
+	color: #000;
+	line-height: 20px;
+}
+.shop_info .server i{
+	margin-right: 10px;
+	color: #d0021b;
+    font-size: 12px;
+}
+.shop_info .server span:nth-child(1),
+.shop_info .server span:nth-child(2){
+	margin-left: 10px;
+}
+.shop_info .server span:nth-child(3){
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #b0b0b0;
+}
+.shop_info .server a{
+	color: #d0021b;
+	font-size: 12px;
+}
+.shop_info .saomiao{
+	width: 180px;
+    height: 92px;
+    color: #222;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.shop_info .saomiao div{
+	width: 90px;
+	height: 90px;
+}
+.shop_info .saomiao div:nth-child(1){
+	background: url("../images/code_register.jpg") no-repeat center;
+}
+.shop_info .saomiao div:nth-child(2){
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
