@@ -24,7 +24,7 @@ gulp.task('minijs', function() {
         gulp.src('app/static/js/*.js')
             .pipe(gulp.dest('dist/static/js'))
             .pipe(connect.reload())
-             console.log("minijs执行了")
+        console.log("minijs执行了")
     })
     //压缩css
 gulp.task('minicss', function() {
@@ -32,14 +32,14 @@ gulp.task('minicss', function() {
             .pipe(minicss())
             .pipe(gulp.dest('dist/static/css'))
             .pipe(connect.reload())
-            console.log("minicss执行了")
+        console.log("minicss执行了")
     })
     //压缩HTML
 gulp.task('minihtml', function() {
         gulp.src('app/*.html')
             .pipe(gulp.dest('dist'))
             .pipe(connect.reload()) //实时刷新
-            console.log("minihtml执行了")
+        console.log("minihtml执行了")
     })
     //图片压缩
 gulp.task('miniimg', function() {
@@ -80,20 +80,14 @@ gulp.task("es5", function() {
     })
     //删除文件
 gulp.task('clean', function() {
-        del(['dist'])
-    })
+    del(['dist'])
+})
 gulp.task("default", function() {
     runSequence(["clean"], ["all"], ["watch", "server"])
 });
-<<<<<<< HEAD
-var sass = require('gulp-sass');
- 
-sass.compiler = require('node-sass');
-=======
 //将saaa变成css
 gulp.task('sass', function() {
     return gulp.src('app/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('app/**/css'));
 });
->>>>>>> c8692961c1e2fb9eefe455a1c85eeeed52cfe327
