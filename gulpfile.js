@@ -90,9 +90,5 @@ gulp.task('sass', function() {
     return gulp.src('app/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('app/**/css'));
-<<<<<<< HEAD
-
-=======
->>>>>>> 484001fbc2adb701a0d919e4187657f8cba851aa
 });
 
