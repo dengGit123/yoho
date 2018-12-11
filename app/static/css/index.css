@@ -408,7 +408,7 @@
 	width: 113px;
 	height: 113px;
 	background: url(../images/code_img.png) no-repeat;
-	background-size:cover; 
+	background-size:contain; 
 }
 #code-down-box h1{
 	font-size: 12px;
@@ -417,6 +417,20 @@
 	color: #000;
 	text-align: center;
 }
+.icon-cha{
+	position: absolute;
+	top:-22px;
+	right: 8px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
 /* 下半部分 */
 .center{
 	width: 1150px;

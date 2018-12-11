@@ -31,3 +31,6 @@ gulp.task('default', function() {
 	console.log('this is a new test page.');
 	gulp.start('woyaofuwuqi');  //启动一个web服务器
 });
+var sass = require('gulp-sass');
+ 
+sass.compiler = require('node-sass');
