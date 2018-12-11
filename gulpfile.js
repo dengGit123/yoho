@@ -85,17 +85,11 @@ gulp.task('clean', function() {
 gulp.task("default", function() {
     runSequence(["clean"], ["all"], ["watch", "server"])
 });
-<<<<<<< HEAD
-
-=======
->>>>>>> 92ac86bc18c17d5baaaa73fdfbdf5c8ba399b982
 //将saaa变成css
 gulp.task('sass', function() {
     return gulp.src('app/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('app/**/css'));
-<<<<<<< HEAD
+
 });
-=======
-});
->>>>>>> 92ac86bc18c17d5baaaa73fdfbdf5c8ba399b982
+
