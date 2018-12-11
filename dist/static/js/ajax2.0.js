@@ -50,7 +50,6 @@ function sendAjax(url, obj) {
         console.log(url);
         _default.data = null;
     } else if(_default.method == 'POST') {
-        
         _default.data = JSON.stringify(_default.data);
     } else {
         console.log('告辞!');
@@ -59,6 +58,7 @@ function sendAjax(url, obj) {
 
     xhr.open(_default.method, url, true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    // console.log(_default.data);
     xhr.send(_default.data);
     return new Promise(function(resolve, reject) {
         xhr.onreadystatechange = function() {
