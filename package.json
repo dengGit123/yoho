@@ -38,13 +38,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.1",
     "node-sass": "^4.11.0",
-<<<<<<< HEAD
-
     "uglify-js": "^3.4.9",
-
-=======
-    "uglify-js": "^3.4.9",
->>>>>>> 92ac86bc18c17d5baaaa73fdfbdf5c8ba399b982
     "run-sequence": "^2.2.1"
   }
 }
