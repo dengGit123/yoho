@@ -9,9 +9,13 @@
 		<title>YOHO!BUY 有货-潮流服饰购物网站,中国时尚潮流购物风向标</title>
 		<link rel="stylesheet" type="text/css" href="static/css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="static/css/index.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/common.css" />
 	</head>
 
 	<body>
+		
+		
+		<!--------------------------------------------header-------------------------------------------->
 		<div id="header_wrapper">
 			<div class="tool-wrapper clearfix">
 				<div class="center-content content">
@@ -163,15 +167,56 @@
 				</div>
 			</div>
 		</div>
+		
+			
+		<!--------------------------------------------code-img-------------------------------------------->		
 		<div id="code-down-box">
 			<div class="code-img"></div>
 			<h1>下载手机客户端</h1>
 			<i class="iconfont icon-cha"></i>
 		</div>
 		
-		
+		<!--------------------------------------------banner-img-------------------------------------------->
+		<div class="qf-banner">
+	        <div class="banner-inner fade">
+	            <div>
+	                <img src="static/images/img-0101.jpg" alt="">
+	            </div>
+	            <div>
+	                <img src="static/images/img-0202.jpg" alt="">
+	            </div>
+	            <div>
+	                <img src="static/images/img-0303.jpg" alt="">
+	            </div>
+	            <div>
+	                <img src="static/images/img-0404.jpg" alt="">
+	            </div>
+	            <div>
+	                <img src="static/images/img-0505.jpg" alt="">
+	            </div>
+	            <div>
+	                <img src="static/images/img-0606.jpg" alt="">
+	            </div>
+	            <div>
+	                <img src="static/images/img-0707.jpg" alt="">
+	            </div>
+	            <div>
+	                <img src="static/images/img-0808.jpg" alt="">
+	            </div>
+	        </div>
+	        <ul class="banner-tip">
+	            <li class="first-child"><img src="static/images/img-01.jpg"/></li>
+	            <li><img src="static/images/img02.jpg"/></li>
+	            <li><img src="static/images/img-03.jpg"/></li>
+	            <li><img src="static/images/img-04.jpg"/></li>
+	            <li><img src="static/images/img-05.jpg"/></li>
+	            <li><img src="static/images/img-06.jpg"/></li>
+	            <li><img src="static/images/img-07.jpg"/></li>
+				<li><img src="static/images/img-08.jpg"/></li>
+	        </ul>  
+	    </div>
 
-
+		<!--------------------------------------------fashion-cloth-------------------------------------------->
 		<div class="upper center public"> 
 			<div class="top_title">
 				<h2>潮流上装</h2>
@@ -1020,5 +1065,16 @@
         </div>
     </div>
     <!-- 底部结束 -->
+    <script src="static/js/move1.1.0.js"></script>
+    <script src="static/js/swiper2.0.js"></script>
+    <script src="static/js/changeImg.js"></script>
+   	<script src="static/js/command.js"></script>
+    <script type="text/javascript">
+    	var swiper = new Swiper({
+           el: '.qf-banner',
+           autoPlay: true
+       	});
+	    swiper.init();
+	</script>
 	</body>
 </html>
