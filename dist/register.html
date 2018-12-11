@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新用户注册</title>
+		<link rel="stylesheet" href="static/css/reset.css">
+    	<link rel="stylesheet" type="text/css" href="static/css/iconfont.css"/>
+    	<link rel="stylesheet" href="static/css/register.css">
+	</head>
+	<body>
+		  <div id="header_wrapper">
+        <div class="header center">
+            <div class="logo">
+                <h1><a href="">YOHO!BUY</a></h1>
+            </div>
+            <ul>
+                <li>
+                    HI~<a href="login.html">[请登录]</a>&nbsp;<a href="register.html">[免费注册]</a>
+                </li>
+                <li>
+                    <a href="">MY有货<span></span></a>
+                    <div class="my">
+                        <a href="">我的收藏</a>
+                        <a href="">优惠卷</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="">订单中心</a>
+                </li>
+                <li>
+                    <a href="">客服服务<span></span></a>
+                    <div class="serve">
+                        <a href="">在线客服</a>
+                        <a href="">帮助中心</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="content_wrapper">
+    	<div class="content center">
+    		<div class="img">
+    			<img src="static/images/banner_img.jpg" alt="" />
+    		</div>
+    		<div class="register">
+    			<form action="../server/register.php" onsubmit="return false" method="post">
+    				<select name="">
+    					<option value="" selected="selected">中国</option>
+    					<option value="">中国香港</option>
+    					<option value="">中国台湾</option>
+    					<option value="">中国澳门</option>
+    					<option value="">澳大利亚</option>
+    					<option value="">韩国</option>
+    					<option value="">美国</option>
+    					<option value="">俄罗斯</option>
+    					<option value="">日本</option>
+    					<option value="">加拿大</option>
+    					<option value="">马来西亚</option>
+    				</select>
+    				<div class="tel">
+    					<span>+86</span>
+    					<input type="text" placeholder="请输入手机号码" name="phone" data-error="请输入手机号"/>
+    					<div class="error_title">
+    						手机号码格式不正确,请重新输入
+    					</div>
+    				</div>
+    				<p><span>请将下列图片翻转至正确方向</span><a href="" class="change">换一批</a></p>
+	    			<div class="img_list">
+	    				<div><img src="static/images/images.png" alt="" /></div>
+	    				<div><img src="static/images/images.png" alt="" /></div>
+	    				<div><img src="static/images/images.png" alt="" /></div>
+	    				<div><img src="static/images/images.png" alt="" /></div>
+	    			</div>
+	    			<div class="verify">
+	    				<input type="text" placeholder="短信验证码" name="verify"/>
+	    				<button>获取短信验证码</button>
+	    				<p><i></i>短信验证码已发送至您的手机，请查收</p>
+	    			</div>
+	    			<div class="set_pass clearfix">
+	    				<input type="password" placeholder="设置密码" name="password" data-error="请输入密码" maxlength="20"/>
+	    				<div class="error_title">
+    						密码只支持6-20位字符
+    					</div>
+	    				<div class="status clearfix" style="color: #FFF;">
+	    					<span>低</span>
+	    					<span>中</span>
+	    					<span>高</span>
+	    				</div>
+	    				<div class="hint">
+	    					<p><i class="iconfont icon-xinxijinggao"></i>密码只支持6-20位字符</p>
+	    					<p><i class="iconfont icon-xinxijinggao"></i>由字母、 数字组合，不能包含特殊符号</p>
+	    				</div>
+	    			</div>
+	    			<input type="text" placeholder="潮流口令(非必填)" name="command" maxlength="20"/>
+	    			<p class="check"><input type="checkbox" checked="checked" name=""/><span>我已阅读并同意遵守</span><a href="">YOHO!BUY有货服务条款</a></p>
+	    			<div class="right_away">
+	    				<button class="sub">立即注册</button>
+	    				<div class="code">
+	    					<div class="sao_code">
+	    						<img src="static/images/code_img.png"/>
+	    						<p>扫码二维码</p>
+	    						<p>下载yoho手机端</p>
+	    						<a href="javascript:void(0);">更多客户端下载</a>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<p class="login">我已注册YOHO!BUY 有货账号<a href="">快速登录</a></p>
+    			</form>
+    		</div>
+    	</div>
+    </div>
+     <div id="footer_wrapper">
+        <div class="footer center">
+            <div class="footer_top">
+                <ul>
+                    <li><i></i><span>100%</span><span>品牌正品</span></li>
+                    <li><i></i><span>7天</span><span>无理由退换货</span></li>
+                    <li><i></i><span>便捷</span><a href="">在线客服</a></li>
+                </ul>
+                <form action="">
+                    <input type="text" value="订阅我们的邮件">
+                    <span></span>
+                </form>
+            </div>
+            <ul>
+                <li>
+                    <h2>新手专区</h2>
+                    <a href="">注册登录</a>
+                    <a href="">购物结算</a>
+                    <a href="">下单支付</a>
+                    <a href="">收货评价</a>
+                </li>
+                <li>
+                    <h2>会员中心</h2>
+                    <a href="">会员制度</a>
+                    <a href="">会员优惠</a>
+                    <a href="">账户管理</a>
+                    <a href="">密码管理</a>
+                </li>
+                <li>
+                    <h2>购物指南</h2>
+                    <a href="">发票</a>
+                    <a href="">尺码对照</a>
+                    <a href="">尺码解读</a>
+                    <a href="">商品咨询</a>
+                </li>
+                <li>
+                    <h2>支付方式</h2>
+                    <a href="">在线支付</a>
+                    <a href="">货到付款</a>
+                    <a href="">分期支付</a>
+                    <a href="">优惠卷、有货币</a>
+                </li>
+                <li>
+                    <h2>配送方式</h2>
+                    <a href="">配送说明</a>
+                    <a href="">运费说明</a>
+                    <a href="">验货签收</a>
+                    <a href="">收货样品</a>
+                </li>
+                <li>
+                    <h2>售后服务</h2>
+                    <a href="">退换货政策</a>
+                    <a href="">退换货流程</a>
+                    <a href="">投诉与建议</a>
+                    <a href="">在线客服</a>
+                </li>
+                <li>
+                    <h2>APP常见问题</h2>
+                    <a href="">IPhone版</a>
+                    <a href="">Android版</a>
+                    <a href="">wap版</a>
+                    <a href="">IPAD版</a>
+                </li>
+            </ul>
+            <div class="footer_bottom clearfix">
+                <img src="static/images/ebsIcon.png" alt="">
+                <img src="static/images/credit-flag3.png" alt="">
+                <img src="static/images/isc2.png" alt="">
+                <div class="a_list">
+                        <a href="">返回首页</a>
+                        <a href="">YOHO!BUY 有货</a>
+                        <a href="">新力传媒</a>
+                        <a href="">联系我们</a>
+                        <a href="">商家入驻</a>
+                        <a href="">隐私条款</a>
+                        <a href="">友情链接</a>
+                        <a href="">潮流品牌大全</a>
+                        <a href="">潮流品类大全</a>
+                        <a href="">潮流产品大全</a>
+                        <a href="">潮流资讯</a>
+                        <a href="">穿衣搭配(男生版)</a>
+                        <a href="">穿衣搭配(女生版)</a>
+                        <a href="">潮流人气</a>
+                        <a href="">潮流潮品</a>
+                        <a href="">潮流视频</a>
+                        <a href=""><i></i>苏公网安备320105010132号</a>
+               </div>
+            </div>
+            <p>CopyRight&copy;2007-2018南京新与力文化传播有限公司苏ICP备09011225号NewPowerCo.版权所有经营许可证编号:苏B2-20120395</p>
+        </div>
+    </div>
+   	<script src="static/js/ajax2.0.js"></script>
+    <script src="static/js/register.js"></script>
+	</body>
+</html>
