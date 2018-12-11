@@ -522,6 +522,12 @@
 .footer .footer_bottom {
 	display: flex;
 }
+.footer-son{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
 /*.footer .footer_bottom img{
 	float: left;
 }*/
