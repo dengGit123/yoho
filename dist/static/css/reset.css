@@ -1,1 +1,78 @@
-body,dd,div,dl,dt,em,h1,h2,h3,h4,h5,h6,i,input,li,ol,p,span,strong,td,textarea,th,ul{padding:0;margin:0}body,html{font:12px "微软雅黑 Arial"}a{text-decoration:none;font-size:12px}li{list-style:none}input,select{outline:0}b,h1,h2,h3,h4,h5,h6,strong{font-weight:400}em,i{font-style:normal}img{border:0;display:block}.clearfix:after{content:"";display:block;clear:both;height:0;overflow:hidden;text-overflow:hidden}.clearfix{zoom:1}
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+p,
+input,
+textarea,
+i,
+em,
+strong,
+th,
+td {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    font: 12px "微软雅黑 Arial";
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+li {
+    list-style: none;
+}
+
+input ,select{
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+img {
+    border: 0;
+    display: block;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    text-overflow: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
