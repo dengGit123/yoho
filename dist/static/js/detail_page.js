@@ -91,38 +91,46 @@ const fdj = (function() {
             data = {}
             go_car.onclick = function(){
 //          	_this.getData();
-			sendAjax("static/json/shop.json",{
-				method:"get"
-			}).then(rev=>{
+			
+			for(let i=0;i<len.children.length;i++){
+            			if(len.children[i].className.indexOf("focus") !=-1){
+            				sendAjax("static/json/shop.json",{
+								method:"get"
+							}).then(rev=>{
 				rev = JSON.parse(rev);
 //				console.log(rev.data);
 				rev.data[0].shop_num = num.innerHTML;
+//				console.log(color.innerText);
+				rev.data[0].color = color.innerText;
+				let focus = len.querySelector(".focus");
+				rev.data[0].len = focus.innerText;
 //				console.log(rev.data[0]);
 				_this.setItem(rev.data[0]);
+				location.assign("cart.html");
 			})
-			
+          	}
+          }
+				
             }
         },
         // 把商品数据存储到本地
         setItem(data){
         	  // 现获取原有数据
+//      	  console.log(data);
         	  var shopList = localStorage.getItem("shopList") || "[]";
         	   shopList = JSON.parse(shopList);
+        	   //判断是不是存在该商品
+        	   for(let i=0;i<shopList.length;i++){
+        	   		if(data.id == shopList[i].id){
+        	   			shopList.splice(i,1);
+        	   			break;
+        	   		}
+        	   }
         	    // 在把新数据push到原有数据
                 shopList.push(data);
               	// 在把全部数据存到本地
                	localStorage.shopList = JSON.stringify(shopList);
-        },
-                    //获取数据
-//      getData(){
-//          sendAjax("http://localhost:8888/item/yoho/server/php/getData.php",{}).then(rev=>{
-////          	console.log(rev);
-////          	rev = JSON.parse(rev);
-////          	console.log(rev);
-//				p = shop_info = document.querySelector(".shop_info p");
-//				p.innerHTML = rev;
-//          })
-//      }
+        }
     }
 }());
 fdj.init();
