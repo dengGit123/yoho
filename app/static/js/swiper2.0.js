@@ -1,13 +1,3 @@
-// 淡入淡出的轮播图
-/*
-    {
-        el: '目标元素',
-        autoplay： false，
-        index: 0 // 展示图片的索引
-    }
-
-*/
-
 function Swiper(obj) {
     if(typeof obj.el === 'string') {
         obj.el = document.querySelector(obj.el);
@@ -18,7 +8,7 @@ function Swiper(obj) {
     // 获取所有的小圆点
     this.$allTips = this.$tipsBox.querySelectorAll('li');
     // 找到所有的图片
-    this.$allImage = this.$el.querySelectorAll('.slide-wrapper>div');
+    this.$allImage = this.$el.querySelectorAll('.banner-inner>div');
     // 当前展示图片的索引
     this.index = obj.index || 0;
     this.timer = null;

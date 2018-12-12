@@ -13,7 +13,6 @@ function ChangeImage(obj) {
     // 给上一页下一页添加点击事件
     this.$nextBtn = this.$el.querySelector('.right-btn');
     this.$preBtn = this.$el.querySelector('.left-btn');
-
 }
 var fn = function() {}
 fn.prototype = Swiper.prototype;
@@ -44,16 +43,17 @@ ChangeImage.prototype.showImage = function(index) {
         this.$allTips[i].classList.remove('active');
     }
     this.$allTips[this.index].classList.add('active');
+}
     move(this.$imageBox, {left: -this.$width * (this.index + 1)}, 500)
 }
-//ChangeImage.prototype.next = function() {
-//  this.index++;
-//  this.showImage();
-//  // 点击以后重置自动播放
-//  this.autoPlay();
-//}
-//ChangeImage.prototype.prev = function() {
-//  this.index--;
-//  this.showImage();
-//  this.autoPlay();
-//}
+ChangeImage.prototype.next = function() {
+    this.index++;
+    this.showImage();
+    // 点击以后重置自动播放
+    this.autoPlay();
+}
+ChangeImage.prototype.prev = function() {
+    this.index--;
+    this.showImage();
+    this.autoPlay();
+}
