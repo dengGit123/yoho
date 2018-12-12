@@ -15,6 +15,7 @@ const go_top = (function(){
 				}
 			});
 			$(".go_top .go").on("click",function(){
+				console.log(111);
 				clearInterval(timer);
 				let top = $(document).scrollTop();
 				timer = setInterval(function(){

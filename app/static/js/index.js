@@ -1,6 +1,6 @@
 var colseCode = (function(){
 	var $dcCha = document.querySelector('.dc-cha');
-	var $codeDownBox = document.querySelector('.code-down-box')
+	var $codeDownBox = document.querySelector('.code-down-box');
 	return{
 		init(){
 			this.event();
