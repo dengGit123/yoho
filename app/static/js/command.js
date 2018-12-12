@@ -3,7 +3,6 @@ const go_top = (function(){
 	let timer = null
 	return {
 		init(){
-			
 			this.event();
 		},
 		event(){

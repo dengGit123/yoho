@@ -14,33 +14,6 @@
 
 <body>
     <div id="header_wrapper">
-        <div class="header center">
-            <div class="logo">
-                <h1><a href="">YOHO!BUY</a></h1>
-            </div>
-            <ul>
-                <li>
-                    HI~<a href="login.html">[请登录]</a>&nbsp;<a href="register.html">[免费注册]</a>
-                </li>
-                <li>
-                    <a href="">MY有货<span></span></a>
-                    <div class="my">
-                        <a href="">我的收藏</a>
-                        <a href="">优惠卷</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="">订单中心</a>
-                </li>
-                <li>
-                    <a href="">客服服务<span></span></a>
-                    <div class="serve">
-                        <a href="">在线客服</a>
-                        <a href="">帮助中心</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
     </div>
     <div id="content_wrapper">
     	<div class="center content_box">
@@ -108,30 +81,14 @@
 	  </div>
     </div>
     <div id="footer_wrapper">
-     </div>
-	<div class="go_top">
-		<div class="code">
-			<div class="code_box">
-				<div class="weixi">
-					<img src="static/images/code_img.png"/>
-					<p>微信扫一扫</p>
-					<p>关注公众号，送球鞋</p>
-				</div>
-				<div class="client">
-					<img src="static/images/code_img.png"/>
-					<p>下载手机客户端</p>
-					<a href="">更多客户端下载</a>
-				</div>
-			</div>	
-		</div>
-		<div class="go">
-			<i class="iconfont icon-xiangxia"></i>
-		</div>
-	</div>
+    </div>
+     <div class="go_top"></div>
 </body>
 <script src="static/js/jquery-3.3.1.js"></script>
     <script type="text/javascript">
+    	$("#header_wrapper").load("login_register_footer.html");
     	$("#footer_wrapper").load("footer.html");
+    	$(".go_top").load("go_to.html");
     </script>
 <script src="static/js/command.js"></script>
 <script src="static/js/ajax2.0.js"></script>

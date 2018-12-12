@@ -1,7 +1,6 @@
 var colseCode = (function(){
 	var $dcCha = document.querySelector('.dc-cha');
-	console.log($dcCha);
-	var $codeDownBox = document.querySelector('#code-down-box')
+	var $codeDownBox = document.querySelector('.code-down-box')
 	return{
 		init(){
 			this.event();
@@ -9,7 +8,7 @@ var colseCode = (function(){
 		event(e){
 			var e = e || window.event;
 			$dcCha.onclick = function(){
-			$codeDownBox.style.display = "none";
+			$codeDownBox.style.display = 'none';
 			}
 		}
 	}
