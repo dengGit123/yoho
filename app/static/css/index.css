@@ -94,7 +94,7 @@
 	width: 10px;
 	height: 5px;
 	vertical-align: middle;
-	background: url(../images/sprite..png) no-repeat;
+	background: url(../images/sprite.png) no-repeat;
 	background-position: -64px -86px;
 	display: inline-block;
 }
@@ -110,7 +110,7 @@
 	width: 11px;
 	height: 14px;
 	vertical-align: middle;
-	background: url(../images/sprite..png) no-repeat;
+	background:url(../images/sprite.png) no-repeat;
 	background-position: 0 -86px;
 	display: inline-block;
 }
@@ -126,7 +126,7 @@
 	width: 14px;
 	height: 13px;
 	vertical-align: middle;
-	background: url(../images/sprite..png) no-repeat;
+	background: url(../images/sprite.png) no-repeat;
 	background-position: -107px -44px;
 	display: inline-block;
 }
@@ -142,7 +142,7 @@
 	width: 16px;
 	height: 11px;
 	vertical-align: middle;
-	background: url(../images/sprite..png) no-repeat;
+	background: url(../images/sprite.png) no-repeat;
 	background-position: -107px -65px;
 	display: inline-block;
 }
@@ -202,7 +202,7 @@
 .we-chat a:nth-child(3){
 	color: #86bf4a;
 }
-.iconfont{
+.icon-font{
 	width: 16px;
 	height: 16px;
 	vertical-align: middle;
@@ -222,7 +222,7 @@
 	width: 10px;
 	height: 14px;
 	vertical-align: middle;
-	background: url(../images/sprite..png) no-repeat;
+	background: url(../images/sprite.png) no-repeat;
 	background-position: 0 -108px;
 	display: inline-block;
 }
