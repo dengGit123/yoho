@@ -194,7 +194,7 @@
                 <img src="static/images/img-0808.jpg" alt="">
             </div>   
        
-        <ul class="banner-tip">
+        <ul class="banner-tip go_to_detail_page">
             <li><img src="static/images/img-01.jpg"/></li>
             <li><img src="static/images/img02.jpg"/></li>
             <li><img src="static/images/img-03.jpg"/></li>
@@ -207,13 +207,13 @@
     </div>
 
 	<!--------------------------------------------singlehot-------------------------------------------->
-	<div class="singlehot clearfix">
+	<div class="singlehot clearfix go_to_detail_page">
 		<div class="floor-header clearfix">
 			<h2>人气单品</h2>
 		</div>
 		<div class="g-list-father content">
 			<ul class="g-list clearfix">
-				<li  class="g-list-last"><a href="javascript"><img src="static/images/single-img01.jpg"/></a></li>
+				<li  class="g-list-last"><a href="javascript:;"><img src="static/images/single-img01.jpg"/></a></li>
 				<li><a href="javascript"><img src="static/images/single-img05.jpg"/></a></li>
 				<li><a href="javascript"><img src="static/images/single-img03.jpg"/></a></li>
 				<li><a href="javascript"><img src="static/images/single-img04.jpg"/></a></li>
@@ -250,7 +250,7 @@
 			</div>
 		</div>-->
 	
-	<div class="logo-brand">
+	<div class="logo-brand go_to_detail_page">
 		<div class="floor-header clearfix">
 			<h2>潮流品牌</h2>
 		</div>
@@ -276,7 +276,7 @@
 		</ul>
 	</div>
 	<!--------------------------------------------fashion-cloth-------------------------------------------->
-	<div class="upper center public"> 
+	<div class="upper center public go_to_detail_page"> 
 		<div class="top_title">
 			<h2>潮流上装</h2>
 			<a href="">MORE</a>
@@ -357,7 +357,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="pants center public">
+	<div class="pants center public go_to_detail_page">
 		<div class="top_title">
 			<h2>潮流下装</h2>
 			<a href="">MORE</a>
@@ -438,7 +438,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="shoe center public">
+	<div class="shoe center public go_to_detail_page">
 		<div class="top_title">
 			<h2>时尚鞋履</h2>
 			<a href="">MORE</a>
@@ -519,7 +519,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="acc center public">
+	<div class="acc center public go_to_detail_page">
 		<div class="top_title">
 			<h2>潮人配饰</h2>
 			<a href="">MORE</a>
@@ -600,7 +600,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="new center">
+	<div class="new center go_to_detail_page">
 		<div class="top_title">
 			<h2>新品上架</h2>
 			<a href="">MORE</a>
@@ -645,5 +645,13 @@
 	<script src="static/js/index.js"></script>
 	<script src="static/js/changeImg.js"></script>
    	<script src="static/js/command.js"></script>
+   	<script>
+   		$img_go = $(".go_to_detail_page img");
+   		$img_a = $(".go_to_detail_page a");
+   		$img_a.attr("href","javascript:;");
+   		$img_go.on("click",function(){
+   			location.assign("shopping.html");
+   		});
+   	</script>
 	</body>
 </html>
