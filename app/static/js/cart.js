@@ -56,12 +56,12 @@ var cartNewtipsClose = (function(){
 				$li = $(str);
 				$add_li.append($li);
 //				console.log($add_li.children()[0]);
-//				console.log($("input:checked").length);
 			}
 			var $minus = $(".num .minus");
 			$xuan_num = $(".num .val");
 			$add = $(".num .add");
 			$price = $(".price p");
+			$remove = $(".other .remove");
 			$num.text($xuan_num.val());
 //			console.log( $price.text().substring(1));
 			let moery_val = $price.text().substring(1)*$xuan_num.val();
@@ -84,7 +84,13 @@ var cartNewtipsClose = (function(){
 			$a_list.on("click",function(){
 				localStorage.clear();
 				$add_li.hide();
-			})
+			});
+			$remove.on("click",function(){
+				localStorage.clear();
+				$add_li.hide();
+				$car_null.show();
+				$car_have.hide();
+			});
 		},
 		insertData(num){
 				$xuan_num.val(num);
