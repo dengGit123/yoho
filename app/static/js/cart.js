@@ -1,18 +1,19 @@
 var cartNewtipsClose = (function(){
-	var $cartnewTips = document.querySelector('.cartnew-tips');
+	var $cartnewTips = document.querySelector('.cartnew-tips'),
 			$car_null = $("#order-pay-wrapper"),
-			$car_have = $("#car_shop");
-			$add_li = $(".shop_info ul.add_li"),
-			$minus = $(".num .minus"),
-			$xuan_num = $(".num .val"),
-			$add = $(".num .add"),
-			$num = $(".clear .shop_num");
+			$car_have = $("#car_shop"),
+			$add_li = $(".shop_info .add_li"),
+			$num = $(".clear .shop_num")
+			console.log($);
+			
 	return{
+		
 		init(){
 			this.event();
-
+			
 		},
 		event(e){
+			
 			var e = e || window.event;
 			$cartnewTips.onclick = function(){
 			$cartnewTips.style.display = 'none';
@@ -56,9 +57,14 @@ var cartNewtipsClose = (function(){
 //				console.log($add_li.children()[0]);
 //				console.log($("input:checked").length);
 			}
-			let a = $xuan_num;
-				console.log(a);
-				$num.val("3");
+			var $minus = $(".num .minus"),
+			$xuan_num = $(".num .val"),
+			$add = $(".num .add"),
+			a = $xuan_num;
+//				console.log(a);
+//				console.log(a);
+//				console.log(a);
+				$(".shop_num").text("555");
 		}
 	}
 }())
