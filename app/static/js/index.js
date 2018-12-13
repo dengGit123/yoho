@@ -19,11 +19,7 @@ var colseCode = (function(){
 	}
 }())
 colseCode.init();
-<<<<<<< HEAD
 
-
-=======
->>>>>>> dbb29154672a4e33562fda71ee3682888a784385
 //banner
 $(function () {
     var which = 0;
