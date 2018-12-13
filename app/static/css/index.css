@@ -435,38 +435,20 @@
 	cursor: pointer;
 }
 /*  轮播图      */
-.qf-banner {
+#banner {
     position: relative;
     width: 1150px;
     height: 512px;
     margin: 10px auto 0;
     overflow: hidden;
 }
-.banner-inner div.active {
-    display: block;
+.banner-inner{
+	position: relative;
 }
-/* 渐变的样式 */
-.banner-inner.fade div{
-    display: none;
-}
-.banner-inner.fade div{
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.banner-inner.fade div.active {
-    display: block;
-}
-/* 作用滑动的样式 */
-.banner-inner.slide {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 9999px;
-    height: 240px;
-}
-.banner-inner.slide div {
-    float: left;
+.banner-inner img{
+	position: absolute;
+	top:0;
+	left: 0;
 }
 
 .banner-tip {
@@ -484,7 +466,6 @@
     display: inline-block;
     width: 138px;
     height: 54px;
-    /*margin-left:  6px;*/
     box-sizing: border-box;
     background-color: #000;
     cursor: pointer;
@@ -493,26 +474,7 @@
 .banner-tip li.active {
     opacity: 1;
 }
-.banner-tip .first-child{
-	margin-left: 0;
-}
-.left-btn, .right-btn {
-    position: absolute;
-    top: 50%;
-    margin-top: -23px;
-    width: 35px;
-    height: 46px;
-    background-image: url(../images/pre.png);
-}
-.left-btn {
-	top: 202px;
-    left: 25px;
-}
-.right-btn {
-	top: 202px;
-    right: 25px;
-    background-position: -45px, 0;
-}
+
 /*人气单品*/
 .floor-header{
 	position: relative;
