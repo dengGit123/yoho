@@ -3,6 +3,8 @@ var colseCode = (function(){
 	//console.log($dcCha);
 	var $codeDownBox = document.querySelector('.code-down-box');
 	console.log($dcCha);
+
+	//console.log($dcCha);
 	var $codeDownBox = document.querySelector('#code-down-box')
 	return{
 		init(){
