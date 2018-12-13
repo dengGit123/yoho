@@ -1,7 +1,7 @@
 function ChangeImage(obj) {
     Swiper.call(this, obj);
 
-    this.$imageBox = this.$el.querySelector('.slide-wrapper');
+    this.$imageBox = this.$el.querySelector('.banner-inner');
     // 获取一张图片的宽
     this.$width = this.$el.clientWidth;
     // 把第一张图片加到最后一张， 最后一张添加到第一张
