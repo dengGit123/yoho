@@ -434,6 +434,8 @@
 	display: inline-block;
 	cursor: pointer;
 }
+
+
 /*  轮播图      */
 #banner {
     position: relative;
@@ -475,6 +477,10 @@
     opacity: 1;
 }
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> dbb29154672a4e33562fda71ee3682888a784385
 /*人气单品*/
 .floor-header{
 	position: relative;
