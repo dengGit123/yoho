@@ -11,7 +11,7 @@ function move($ele, targetObj, time = 200, callback) {
     }
     // 确保是dom对象以后, 在清除定时器
     // debugger
-//  console.log($ele);
+	//console.log($ele);
     clearInterval($ele.timer);
 
     // 获取每个属性的速度
