@@ -2,6 +2,7 @@ function ChangeImage(obj) {
     Swiper.call(this, obj);
 
     this.$imageBox = this.$el.querySelector('.banner-inner');
+    console.log(this.$imagesBox)
     // 获取一张图片的宽
     this.$width = this.$el.clientWidth;
     // 把第一张图片加到最后一张， 最后一张添加到第一张
@@ -13,6 +14,7 @@ function ChangeImage(obj) {
     // 给上一页下一页添加点击事件
     this.$nextBtn = this.$el.querySelector('.right-btn');
     this.$preBtn = this.$el.querySelector('.left-btn');
+    console.log(this.$nextBtn)
 }
 var fn = function() {}
 fn.prototype = Swiper.prototype;
@@ -23,9 +25,10 @@ ChangeImage.prototype.init = function() {
     this.autoPlay();
     this.$nextBtn.onclick = () => {
         this.next();
+        
     }
     this.$preBtn.onclick = () => {
-        this.prev()
+        this.prev();
     }
 }
 ChangeImage.prototype.showImage = function(index) {
