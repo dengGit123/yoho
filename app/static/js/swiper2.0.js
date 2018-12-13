@@ -5,6 +5,7 @@ function Swiper(obj) {
     this.$el =  obj.el;
     // 找到小圆点的盒子
     this.$tipsBox = this.$el.querySelector('.banner-tip');
+    
     // 获取所有的小圆点
     this.$allTips = this.$tipsBox.querySelectorAll('li');
     // 找到所有的图片
@@ -13,6 +14,7 @@ function Swiper(obj) {
     this.index = obj.index || 0;
     this.timer = null;
 }
+
 // 初始化函数
 Swiper.prototype.init = function() {
     this.showImage();
