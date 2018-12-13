@@ -58,7 +58,6 @@ var cartNewtipsClose = (function(){
 			}
 			let a = $xuan_num;
 				console.log(a);
-				$num.val("3");
 		}
 	}
 }())
