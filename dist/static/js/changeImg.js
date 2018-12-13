@@ -43,7 +43,6 @@ ChangeImage.prototype.showImage = function(index) {
         this.$allTips[i].classList.remove('active');
     }
     this.$allTips[this.index].classList.add('active');
-}
     move(this.$imageBox, {left: -this.$width * (this.index + 1)}, 500)
 }
 ChangeImage.prototype.next = function() {

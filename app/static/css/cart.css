@@ -16,6 +16,7 @@
     height: 100%;
     margin: 0 auto;
 }
+
 .header-inner .logo{
 	float: left;
 	margin-top: 13px;
@@ -174,6 +175,9 @@
     float: right;
     cursor: pointer;
 }
+#order-pay-wrapper{
+	display: none;
+}
 .order-pay{
 	width: 990px;
 	margin: 0 auto;
@@ -205,6 +209,159 @@
     cursor: pointer;
 
 }
+/*有商品*/
+.car_shop_title{
+	padding: 0 30px;
+    background: #444;
+    height: 50px;
+    overflow: hidden;
+}
+.car_shop_title p{
+	float: left;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    vertical-align: middle;
+    text-align: center;
+}
+.shop_info ul li{
+	border: 1px solid #e0e0e0;
+	background-color: #f5f5f5;
+	height: 150px;
+	padding: 0 30px 0 54px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.float{
+	float: left;
+}
+.shop_info  li .img a{
+	display: block;
+	border: 1px solid #A5A5A5;
+	margin:auto 0;
+}
+.shop_info  li .shop_shuju h2{
+	font-size: 14px;
+	margin-top: -38px;
+	}
+.shop_info  li .shop_shuju .attr{
+		color: #9a9a9a;;
+}
+.shop_info  li .num span{
+	float: left;
+	display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.shop_info  li .num input[type="text"]{
+	display: block;
+	width: 36px;
+	height: 28px;
+	border: 0;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	float: left;
+	background-color: #fff;
+	text-align: center;
+}
+.shop_info  li .sum p{
+	color: red;
+	}
+.shop_info  li .other span{
+	display: block;
+	text-align: right;
+	cursor: pointer;
+	line-height: 22px;
+}
+.shop_info  li .location {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	}
+	.shop_info  li .img{
+		left: 54px;
+		}
+		.shop_info  li .shop_shuju{
+		left: 136px;
+		}
+		.shop_info  li .price{
+		left: 460px;
+		}
+		.shop_info  li .num{
+		left: 580px;
+		}
+		.shop_info  li .sum{
+		left: 735px;
+		}
+		.shop_info  li .other{
+		right: 85px;
+		}
+.shop_info  li .img input[type="checkbox"]{
+	position: absolute;
+	left: -24px;
+	}
+	.shop_info .clear{
+		height: 50px;
+		background-color: #e0e0e0;
+		/*margin: auto 0;*/
+		margin-bottom: 20px;
+	}
+		.shop_info .clear>div{
+		}
+		.shop_info .clear .margin {
+			margin-top: 18px;
+		}
+		.shop_info .clear .checked {
+			margin-left: 34px;
+		}
+		.shop_info .clear .checked input[type="checkbox"]{
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+		.shop_info .clear .active a{
+			margin-left: 30px;
+			}
+			.shop_info .clear .shop_n{
+				margin-left: 50px;
+				margin-right: 50px;
+			}
+			.shop_info .clear .shop_n .shop_num{
+				color: red;
+			}
+			.shop_info .clear .money p{
+				line-height: 22px;
+			}
+			.shop_info .clear .money p span.sum_money{
+				font-weight: bold;
+				color: red;
+				margin-left: 50px;
+				margin-right: 23px;
+				font-size: 20px;
+			}
+			.shop_info .clear .money button{
+				    width: 150px;
+    height: 50px;
+    text-align: center;
+    border: 0;
+    line-height: 50px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+    background-color: #d0021b;
+    cursor: pointer;
+    float: right;
+			}
 /*bottom-tab*/
 #bottom-tab-wrapper{
 	width: 100%;
@@ -464,4 +621,4 @@
 	left: 0;
 	top: 0;
 	z-index: 9999;
-}
+}}
