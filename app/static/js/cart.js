@@ -3,8 +3,9 @@ var cartNewtipsClose = (function(){
 			$car_null = $("#order-pay-wrapper"),
 			$car_have = $("#car_shop"),
 			$add_li = $(".shop_info .add_li"),
-			$num = $(".clear .shop_num")
-			console.log($);
+			$num = $(".clear .shop_num"),
+			$sum_moery = $(".money .sum_money");
+			$a_list = $(".active a");
 			
 	return{
 		
@@ -13,7 +14,7 @@ var cartNewtipsClose = (function(){
 			
 		},
 		event(e){
-			
+			let _this = this;
 			var e = e || window.event;
 			$cartnewTips.onclick = function(){
 			$cartnewTips.style.display = 'none';
@@ -57,15 +58,40 @@ var cartNewtipsClose = (function(){
 //				console.log($add_li.children()[0]);
 //				console.log($("input:checked").length);
 			}
-			var $minus = $(".num .minus"),
-			$xuan_num = $(".num .val"),
-			$add = $(".num .add"),
-			a = $xuan_num;
-//				console.log(a);
-//				console.log(a);
-//				console.log(a);
-				$(".shop_num").text("555");
+			var $minus = $(".num .minus");
+			$xuan_num = $(".num .val");
+			$add = $(".num .add");
+			$price = $(".price p");
+			$num.text($xuan_num.val());
+//			console.log( $price.text().substring(1));
+			let moery_val = $price.text().substring(1)*$xuan_num.val();
+			$sum_moery.text("￥"+moery_val);
+			$add.on("click",function(){
+				if($xuan_num.val()*1<9){
+					$xuan_num2 = $xuan_num.val()*1;
+				$xuan_num2++;
+				_this.insertData($xuan_num2);
+				}
+				
+			});
+			$minus.on("click",function(){
+				if($xuan_num.val()*1>1){
+					$xuan_num2 = $xuan_num.val()*1;
+					$xuan_num2--;
+				_this.insertData($xuan_num2)
+				}
+			});
+			$a_list.on("click",function(){
+				localStorage.clear();
+				$add_li.hide();
+			})
+		},
+		insertData(num){
+				$xuan_num.val(num);
+				$num.text($xuan_num.val());
+				let moery_val = $price.text().substring(1)*$xuan_num.val();
+				$sum_moery.text("￥"+moery_val);
+				}
 		}
-	}
 }())
 cartNewtipsClose.init();
