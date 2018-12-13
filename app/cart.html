@@ -71,12 +71,13 @@
 			<div class="order-pay">
 				<img src="static/images/bigger-car.jpg"/>
 				<p>购物车空空的哦，去看看心仪的商品吧~</p>
-				<a href="javascript:;">去购物</a>
+				<a href="shopping.html">去购物</a>
 			</div>
 		</div>
+		<div id="car_shop">
 		<div class="car_shop_title">
             <p class="left" style="width:6%;">
-                <input type="checkbox" />&nbsp;&nbsp;全选
+                <input type="checkbox" checked="checked"/>&nbsp;&nbsp;全选
             </p>
             <p style="width:35%">商品信息</p>
             <p style="width:14%">单价</p>
@@ -85,35 +86,11 @@
             <p class="right" style="width:11.8%;">操作</p>
 		</div>
 		<div class="shop_info">
-			<ul>
-				<li class="clearfix">
-					<div class="img float location"><input type="checkbox" class="location"/><a href="detail_page.html"><img src="static/images/car_shop.jpg"/></a></div>
-			<div class="shop_shuju float location">
-				<h2>DC DENHILL M JCKT 防风外套</h2>
-				<div class="attr float">
-					<span>颜色：</span><span class="color">黄色</span> &nbsp;&nbsp;<span>尺寸：</span><span class="len">尺寸</span>
-				</div>
-			</div>
-			<div class="price float location">
-				<p>¥535.00</p>
-			</div>
-			<div class="num float location clearfix">
-				<span class="minus">-</span>
-				<input type="text" disabled="disabled" value="1"/>
-				<span class="add">+</span>
-			</div>
-			<div class="sum float location">
-				<p>¥7490.00</p>
-			</div>
-			<div class="other float location">
-				<span class="remove">删除</span>
-				<span class="move">移入收藏</span>
-			</div>
-				</li>
+			<ul class="add_li">
 			</ul>
 			<div class="clear clearfix">
 				<div class="checked float margin">
-					<input type="checkbox" /><span>全选</span>
+					<input type="checkbox" checked="checked"/><span>全选</span>
 				</div>
 				<div class="active float margin">
 					<a href="">删除选中商品 </a>
@@ -125,12 +102,13 @@
 				</div>
 				<div class="money float clearfix">
 					<div class="float">
-						<p>应付金额（不含邮费）：<span class="sum_money">¥ 415.00</span></p>
+						<p>应付金额（不含邮费）：<span class="sum_money">¥ 0.00</span></p>
 						<p>活动优惠：¥ 319.00</p>
 					</div>
 					<button class="float">去结算</button>
 				</div>
 			</div>
+		</div>
 		</div>
 	<!------------------------------bottom-tab--------------------------->
 		<div id="bottom-tab-wrapper">
@@ -293,7 +271,7 @@
 			<i class="iconfont dc-xiangxia"></i>
 		</div>
 	</div>
-	<script src="../dist/static/js/jquery-3.3.1.js"></script>
+	<script src="/static/js/jquery-3.3.1.js"></script>
 	<script src="static/js/command.js"></script>
 	<script src="static/js/cart.js"></script>
 	</body>
